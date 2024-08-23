@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chat with Claude</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+        <script src="./client.js"></script>
+    </head>
+    <body>
+        <nav class="navbar is-fixed-top has-background-black-ter" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/index.html">
+                    Chat
+                </a>
+                <a class="navbar-item" href="https://zavocc.github.io/search/">
+                    Search
+                </a>
+            </div>
+
+            <div class="navbar-end navbar-menu">
+                <div class="navbar-item">
+                    <div class="button">
+                        <a href="mailto:zavocc1030@outlook.com">Download for Desktop</a>
+                    </div>
+                </div>
+                <div class="navbar-item">
+                    <div class="button">
+                        <a href="mailto:zavocc1030@outlook.com">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+          </nav>
+
+        <section class="section has-background-dark">
+            <p>
+                Chat with Claude 3.5 Sonnet
+            </p>
+            <div class="chatcontrol my-3">
+                <textarea 
+                    class="textarea has-fixed-size my-3" 
+                    id="chatinput" 
+                    placeholder="Ask Claude 3 Haiku anything!" 
+                    rows="3"
+                ></textarea>
+                <button class="button is-primary" id="sendbutton">Send</button>
+                <button class="button is-primary" id="sendbutton">Clear</button>
+            </div>
+
+            <details>
+                <summary>Advanced Options</summary>
+                <p>Select your models</p>
+                <div class="select is-small is-rounded" id="_iselect">
+                    <select>
+                        <option value="claude-3.5-sonnet">Claude 3.5 Sonnet</option>
+                        <option value="gpt-4o-mini">GPT4o Mini</option>
+                        <option value="gpt-3.5-turbo">GPT3.5 Turbo</option>
+                        <option value="ada-0001">ADA</option>
+                    </select>
+                </div>
+            </details>
+        </section>
+
+        <!-- Chat UI -->
+        <section class="section">
+            <div id="chatbox">
+
+            </div>
+        </section>
+    </body>
+</html>
