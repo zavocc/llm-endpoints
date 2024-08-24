@@ -32,19 +32,16 @@
             </div>
           </nav>
 
-        <section class="section has-background-dark">
-            <p>
-                Chat with Claude 3.5 Sonnet
-            </p>
+        <nav class="navbar is-fixed-bottom ml-3 mr-3 mb-3">
             <div class="chatcontrol my-3">
                 <textarea 
                     class="textarea has-fixed-size my-3" 
                     id="chatinput" 
-                    placeholder="Ask Claude 3 Haiku anything!" 
+                    placeholder="Ask Claude 3.5 Sonnet anything!" 
                     rows="3"
                 ></textarea>
                 <button class="button is-primary" id="sendbutton">Send</button>
-                <button class="button is-primary" id="sendbutton">Clear</button>
+                <button class="button is-primary" id="clear">Clear</button>
             </div>
 
             <details>
@@ -55,11 +52,11 @@
                         <option value="claude-3.5-sonnet">Claude 3.5 Sonnet</option>
                         <option value="gpt-4o-mini">GPT4o Mini</option>
                         <option value="gpt-3.5-turbo">GPT3.5 Turbo</option>
-                        <option value="ada-0001">ADA</option>
+                        <option value="gemini-1.5-flash">Gemini 1.5 Flash</option>
                     </select>
                 </div>
             </details>
-        </section>
+        </nav>
 
         <!-- Chat UI -->
         <section class="section">

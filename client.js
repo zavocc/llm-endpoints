@@ -13,4 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
             chatbox.appendChild(responseElement);
         }
     })
+    
+    document.getElementById('clear').addEventListener('click', function(){
+        const chatbox = document.getElementById("chatbox");
+        chatbox.innerHTML = null
+    })
 })
